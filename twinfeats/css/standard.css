@@ -13,7 +13,48 @@ nav {
     justify-content: space-evenly;
     padding: 0.25em;
     font-size: larger;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 
+.logo {
+    width:9ch;
+}
+
+#home {
+    background-image: url(../images/background.jpg);
+}
+
+.title, .logo {
+    font-family: "Indie Flower";
+    font-size: 3em;
+}
+
+.tagline {
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+.photobox {
+    display: flex;
+}
+
+.photobox img {
+    width: 22ch;
+}
+
+.photobox > :last-child {
+    text-align: left;
+}
+
+.photobox figure {
+    font-size: .6em;
+    margin-left: 0;
+    margin-top: .3rem;
+    margin-right: 1em;
+    margin-bottom: 2em;
 }
 
 a {
@@ -28,5 +69,7 @@ article {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed; text-align: center;
+    box-sizing: border-box;
+    padding-top: 4rem;
 }
