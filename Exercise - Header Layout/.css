@@ -1,0 +1,27 @@
+.header {
+    width: 800px;
+    height: 150px;
+    border-style: solid;
+    position: relative;
+}
+
+.logo {
+    width: 60px;
+    height: 50%
+    border-style: solid;
+    position: relative;
+}
+
+.top-nav {
+    width: px;
+    height: 150px;
+    border-style: solid;
+    position: relative;
+}
+
+.menu {
+    width: px;
+    height: px;
+    border-style: solid;
+    position: relative;
+}
