@@ -4,6 +4,7 @@ section {
     background-image:url("/twinfeats/images/catsdogs.jpg");
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center bottom;
 }
 
 .title {
@@ -14,6 +15,8 @@ section {
 
 html {
     font-family: "Open Sans";
+    font-size: 3vh;
+    overflow: hidden; /*This is to hide or disallow scroll bar*/
 }
 
 .subtitle {
