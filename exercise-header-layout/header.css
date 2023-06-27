@@ -1,0 +1,30 @@
+.header {
+    width: 800px;
+    height: 150px;
+    border-style: none;
+    position: relative;
+    border-style: solid;
+}
+
+.logo {
+    margin-inline-start: auto;
+    width: 400px;
+    height: 50%;
+    border-style: solid;
+    position: absolute;
+}
+
+.top-nav {
+    right:0%;
+    width: 150px;
+    height: 25px;
+    border-style: solid;
+    position: absolte;
+}
+
+.menu {
+    width: px;
+    height: px;
+    border-style: solid;
+    position: absolute;
+}
