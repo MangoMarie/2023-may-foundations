@@ -1,6 +1,6 @@
 html {
     font-family: 'Open Sans', sans-serif;
-    font-size: x-large;
+    font-size: 16pt;
 }
 
 body {
@@ -10,13 +10,101 @@ body {
 nav {
     background-color: black;
     display: flex;
-    justify-content: space-evenly;
-    padding: 0.25em;
+    justify-content: space-around;
+    padding: .25em;
     font-size: larger;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 5;
+}
+
+article::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: .1;
+    z-index: -1;
+}
+
+article {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 4rem;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+#about::before {
+    background-image: url(..images/c64.jpg);
+}
+
+#services::before {
+    background-image: url(..images/www.jpg);
+}
+
+#about::before {
+    background-image: url(..images/apps.jpg);
+}
+
+#services h2 {
+    font-size: 1.25em;
+}
+
+#services p,
+#apps p {
+    text-align: left;
+}
+
+#apps h1 {
+    grid-area: header;
+}
+
+#apps>.content {
+    grid-area: main;
+}
+
+#apps>div:nth-of-type(1) {
+    grid-area: sidebar-left;
+    padding-right: 1.5em;
+    text-align: right;
+}
+
+#apps>div:nth-of-type(3) {
+    grid-area: sidebar-right;
+    padding-left: 1.5em;
+    text-align: left;
+}
+
+#apps>.sidebar>img {
+    height: 20vh;
+    margin-bottom: .5em;
+}
+
+#apps {
+    display: grid;
+    grid-template-areas: 
+        'header header header header header header'
+        'sidebar-left main main main main sidebar-right'
+        'sidebar-left main main main main sidebar-right'
+        'sidebar-left main main main main sidebar-right'
+        'sidebar-left main main main main sidebar-right'
+        'sidebar-left main main main main sidebar-right';
 }
 
 .logo {
@@ -29,7 +117,7 @@ nav {
 
 .title, .logo {
     font-family: "Indie Flower";
-    font-size: 3rem;
+    font-size: 3em;
 }
 
 .tagline {
@@ -55,58 +143,4 @@ nav {
     margin-top: .3rem;
     margin-right: 1em;
     margin-bottom: 2em;
-}
-
-a {
-    color: #f0f0f0;
-    text-decoration: none;
-}
-
-article {
-    width: 100;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; text-align: center;
-    box-sizing: border-box;
-    padding-top: 4rem;
-}
-#home{
-    background-image: url('../images/background.jpg');
-}
-p {
-    text-align: left;
-    }
-
-#apps h1 {
-    grid-area: header;
-}
-#apps > .content {
-    grid-area: main;
-}
-#apps >div:nth-of-type(1) {
-    grid-area: sidebar-left;
-    padding-right: 1.5em;
-    text-align: right;
-}
-#apps >div:nth-of-type(3) {
-    grid-area: sidebar-right;
-    padding-right: 1.5em;
-    text-align: left;
-}
-#apps > .sidebar > img {
-    height: 20vh;
-    margin-bottom: 0.5em;
-}
-#apps {
-    display: grid;
-    grid-template-areas:
-        'header header header header header header'
-        'sidebar-left main main main main sidebar-right'
-        'sidebar-left main main main main sidebar-right'
-        'sidebar-left main main main main sidebar-right'
-        'sidebar-left main main main main sidebar-right'
-        'sidebar-left main main main main sidebar-right'
-    ;
 }
