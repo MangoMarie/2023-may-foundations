@@ -1,3 +1,7 @@
+html {
+    font-size: xx-large;
+}
+
 #mobile-nav {
     /* display the hamburger menu */
     display: block;
@@ -24,14 +28,13 @@
         padding: 0.2em;
     }
 
-
 nav {
     /* mobile orientation is column */
     flex-direction: column;
     /* place the nav just under the hamburger menu */
     top: calc(5vh + .5em);
 /* hide the <nav> by not letting it have any width size           due to max-width */
-    max-width: 0;
+    max-width: fit-content;
     /* don't let content extend outside of tag */
     overflow: hidden;
     /* transition into view when shown/hidden */
@@ -47,4 +50,30 @@ nav > a:first-child {
 }
 nav > a:last-child {
     padding-bottom: 0.5em;
+}
+
+.logo {
+    width: 40vh;
+    height: auto;
+}
+
+article {
+    padding-left: 5vh;
+    padding-right: 5vw;
+}
+
+.vertical-container {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tagline {
+    white-space: nowrap;
+}
+
+#bonus {
+    display: block;
+    margin-top: 3em;
 }
