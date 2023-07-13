@@ -178,3 +178,7 @@ background-image: url('../images/contactbg.jpg');
     color: #303030;
     text-decoration: underline;
 }
+
+#mobile-nav, #mobile-trigger (
+    display: none;
+)
