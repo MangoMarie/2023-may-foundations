@@ -70,8 +70,7 @@ article {
     font-size: 1.25em;
 }
 
-#services p,
-#apps p {
+#services p, #apps p {
     text-align: left;
 }
 
@@ -113,6 +112,7 @@ article {
 
 .logo {
     width:9ch;
+    height: ;
 }
 
 #home {
@@ -179,10 +179,24 @@ background-image: url('../images/contactbg.jpg');
     text-decoration: underline;
 }
 
-#mobile-nav, #mobile-trigger {
+#mobile-nav, #mobile-trigger, #bonus {
     display: none;
 }
 
-#mobile-nav, #mobile-trigger, #bonus {
+#mobile-nav, #mobile-trigger, #bonus, .bonus-img {
     display: none;
+}
+
+#contact > div {
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    left: 50%;
+    top: calc(10vh + 3.5rem);
+    transform: translateX(-50%)
+    text-align: left;
+}
+
+#contact > div > * {
+    margin-bottom: 1rem;
 }

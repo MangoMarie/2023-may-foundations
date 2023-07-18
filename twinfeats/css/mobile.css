@@ -59,7 +59,11 @@ nav > a:last-child {
 
 article {
     padding-left: 5vh;
-    padding-right: 5vw;
+    padding-right:5vw;
+    font-size: 1.2rem;
+    padding-top: 5vw;
+    height: auto;
+    min-height: 100vh;
 }
 
 .vertical-container {
@@ -76,4 +80,69 @@ article {
 #bonus {
     display: block;
     margin-top: 3em;
+}
+
+.stage .cube {
+    width: 60vw;
+    height: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    animation-delay: 3s;
+}
+
+.photobox img {
+    height: 60vh;
+    left: 50%; 
+}
+
+.stage .front {
+    transform: translateZ(50vw);
+}
+
+.stage .back {
+    transform: rotateY(-50deg) translateZ(30vw)
+}
+
+.stage .top {
+    transform: rotateX(-50deg) translateZ(30vw);
+}
+
+.stage .bottom {
+    transform: rotateX(-50deg) translateZ(30vw);
+}
+
+.stage .left {
+    transform: rotateY(-50deg) translateZ(30vw);
+}
+
+.stage .right {
+    transform: rotateY(50deg) translateZ(20vw);
+}
+
+figcaption {
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+
+.photobox {
+    flex-direction: column;
+    padding-bottom: 1em;
+}
+
+.stage {
+    width: 100%;
+}
+
+#about:target.cube {
+    animation-play-state: running;
+}
+
+.bonus-img {
+    margin-top: 5vh;
+    display: block;
+    width: 100%;
+}
+
+#contact > div {
+top: calc(4vh + 3.5em);
 }
